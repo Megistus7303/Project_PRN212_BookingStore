@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="Project_PRN212.Sidebar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="200">
+    <StackPanel Background="#34495E" Width="200">
+        <TextBlock Text="Admin Dashboard" Foreground="White" FontSize="20" FontWeight="Bold" Margin="10" />
+        <Button Content="Home" Name="HomeButton"  FontWeight="Bold" Margin="10" Padding="5" Background="{Binding HomeButtonBackground}" Foreground= "#2C2D2D" Click="HomeButton_Click" IsEnabled="{Binding HomeButtonEnabled}"/>
+        <Button Content="Users" Name="UsersButton" FontWeight="Bold" Margin="10" Padding="5" Background="{Binding UsersButtonBackground}" Foreground="#2C2D2D" Click="UsersButton_Click" IsEnabled="{Binding UsersButtonEnabled}"/>
+        <Button Content="Products" Name="ProductsButton" FontWeight="Bold" Margin="10" Padding="5" Background="{Binding ProductsButtonBackground}" Foreground="#2C2D2D" Click="ProductsButton_Click" IsEnabled="{Binding ProductsButtonEnabled}"/>
+        <Button Content="Orders" Name="OrdersButton" FontWeight="Bold" Margin="10" Padding="5" Background="{Binding OrdersButtonBackground}" Foreground="#2C2D2D" Click="OrdersButton_Click" IsEnabled="{Binding OrdersButtonEnabled}"/>
+    </StackPanel>
+</UserControl>
