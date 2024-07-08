@@ -152,3 +152,10 @@ E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\ProductDeta
 E:\C# project\Project_PRN212\Project_PRN212\bin\Debug\net8.0-windows\appsettings.json
 E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\MainWindow.g.cs
 E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\MainWindow.baml
+E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\AuthorListWindow.g.cs
+E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\GenreListWindow.g.cs
+E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\AuthorListWindow.baml
+E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\GenreListWindow.baml
+E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\Project_PRN212.sourcelink.json
+E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\EditBookWindow.baml
+E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\EditBookWindow.g.cs

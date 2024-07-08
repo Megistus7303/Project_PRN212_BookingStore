@@ -7,6 +7,15 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="AuthorListWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditBookWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GenreListWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="HomeContent.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -27,6 +36,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="AuthorListWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditBookWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GenreListWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="HomeContent.xaml">
       <SubType>Designer</SubType>
     </Page>

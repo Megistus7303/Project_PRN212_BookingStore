@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 E:\C# project\Project_PRN212\Project_PRN212\App.xaml
-7-653547807
+10-904115038
 
-211629668741
+241057003128
 2441996432838
-HomeContent.xaml;MainWindow.xaml;OrderListWindow.xaml;ProductDetailWindow.xaml;ProductListWindow.xaml;Sidebar.xaml;UsersWindow.xaml;
+AuthorListWindow.xaml;EditBookWindow.xaml;GenreListWindow.xaml;HomeContent.xaml;MainWindow.xaml;OrderListWindow.xaml;ProductDetailWindow.xaml;ProductListWindow.xaml;Sidebar.xaml;UsersWindow.xaml;
 
-False
+True
 
