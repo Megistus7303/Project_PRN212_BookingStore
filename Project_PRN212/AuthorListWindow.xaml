@@ -9,45 +9,53 @@
     <DockPanel>
         <!-- Sidebar -->
         <local:Sidebar CurrentPage="Authors" DockPanel.Dock="Left" Width="200"/>
+
+        <!-- Header -->
         <Grid DockPanel.Dock="Top" Background="#34495E" Height="50">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
             <TextBlock Text="Authors List" VerticalAlignment="Center" Foreground="White" FontSize="20" Margin="10" />
-            <Button Content="Logout" Name="LogoutButton" VerticalAlignment="Center" Margin="498,0,10,0" Padding="5" Background="#E74C3C" Foreground="White"/>
+            <Button Content="Logout" Name="LogoutButton" VerticalAlignment="Center" Margin="10" Padding="5" Background="#E74C3C" Foreground="White" Grid.Column="1" Click="LogoutButton_Click"/>
         </Grid>
+
         <!-- Main Content -->
         <Grid Margin="10">
             <StackPanel>
-                <!-- Sort Selection Box -->
-                <StackPanel Orientation="Horizontal" Margin="10">
-                    <TextBlock Text="Sort by:" VerticalAlignment="Center" Margin="0,0,10,0"/>
-                    <ComboBox Name="SortComboBox" Width="150" SelectionChanged="SortComboBox_SelectionChanged">
-                        <ComboBoxItem Content="Date Added" Tag="DateAdded" IsSelected="True"/>
-                        <ComboBoxItem Content="Name A-Z" Tag="NameAZ"/>
-                        <ComboBoxItem Content="Name Z-A" Tag="NameZA"/>
-                    </ComboBox>
-                </StackPanel>
-                <!-- User Data Grid -->
-                <DataGrid Name="UsersDataGrid" AutoGenerateColumns="False" Margin="10">
-                    <DataGrid.Columns>
-                        <DataGridTextColumn Header="#" Width="Auto"/>
-                        <DataGridTextColumn Header="Username" Binding="{Binding Username}" Width="*"/>
-                        <DataGridTextColumn Header="Products" Binding="{Binding Products}" Width="*"/>
-                        <DataGridTextColumn Header="Address" Binding="{Binding Address}" Width="*"/>
-                        <DataGridTextColumn Header="Phone Number" Binding="{Binding PhoneNumber}" Width="*"/>
-                        <DataGridTemplateColumn Header="" Width="Auto">
-                            <!--<DataGridTemplateColumn.CellTemplate>
-                             <DataTemplate>
-                                 <Button Content="Detail" Click="DetailsButton_Click"/>
-                             </DataTemplate>
-                         </DataGridTemplateColumn.CellTemplate>-->
-                        </DataGridTemplateColumn>
-
-
-                    </DataGrid.Columns>
-                </DataGrid>
+                <Grid Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Horizontal" Grid.Column="0">
+                        <TextBlock Text="Author Name:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                        <TextBox Name="txtAuthorName" Width="200"/>
+                    </StackPanel>
+                    <Button Content="Add New Author" Click="AddNewAuthorButton_Click" Width="120" Height="30" HorizontalAlignment="Right" Grid.Column="1"/>
+                </Grid>
+                <ListView Name="lvAuthors" Margin="10">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Author ID" Width="100" DisplayMemberBinding="{Binding Path=AuthorId}"/>
+                            <GridViewColumn Header="Author Name" Width="200" DisplayMemberBinding="{Binding Path=AuthorName}"/>
+                            <GridViewColumn Header="Edit" Width="Auto">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Content="Edit" Click="EditButton_Click"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                            <GridViewColumn Header="Delete" Width="Auto">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Content="Delete" Click="DeleteButton_Click"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
             </StackPanel>
         </Grid>
     </DockPanel>

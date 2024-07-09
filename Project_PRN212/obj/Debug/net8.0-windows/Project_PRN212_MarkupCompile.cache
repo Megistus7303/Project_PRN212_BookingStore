@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 E:\C# project\Project_PRN212\Project_PRN212\App.xaml
-10-904115038
+13-1733239774
 
-22225241147
+25495893479
 2441996432838
-AuthorListWindow.xaml;EditBookWindow.xaml;GenreListWindow.xaml;HomeContent.xaml;MainWindow.xaml;OrderListWindow.xaml;ProductDetailWindow.xaml;ProductListWindow.xaml;Sidebar.xaml;UsersWindow.xaml;
+AddBookWindow.xaml;AuthorListWindow.xaml;EditAuthorWindow.xaml;EditBookWindow.xaml;EditGenreWindow.xaml;GenreListWindow.xaml;HomeContent.xaml;MainWindow.xaml;OrderListWindow.xaml;ProductDetailWindow.xaml;ProductListWindow.xaml;Sidebar.xaml;UsersWindow.xaml;
 
 False
 

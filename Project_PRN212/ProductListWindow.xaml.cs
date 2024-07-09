@@ -38,7 +38,6 @@ namespace Project_PRN212
             }
         }
 
-
         public string CurrentPage
         {
             get { return _currentPage; }
@@ -60,8 +59,10 @@ namespace Project_PRN212
 
         private void SortComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            // Implement sorting logic here
+
         }
+
+
 
         private void DetailsButton_Click(object sender, RoutedEventArgs e)
         {
@@ -89,7 +90,6 @@ namespace Project_PRN212
                 }
             }
         }
-
 
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
@@ -122,8 +122,11 @@ namespace Project_PRN212
             }
         }
 
-
-
-
+        private void AddNewBookButton_Click(object sender, RoutedEventArgs e)
+        {
+            AddBookWindow addBookWindow = new AddBookWindow();
+            addBookWindow.ShowDialog();
+            LoadBook(); // Reload the book list to reflect the new book
+        }
     }
 }

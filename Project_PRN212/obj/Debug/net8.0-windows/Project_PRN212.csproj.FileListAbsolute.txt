@@ -159,3 +159,9 @@ E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\GenreListWi
 E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\Project_PRN212.sourcelink.json
 E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\EditBookWindow.baml
 E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\EditBookWindow.g.cs
+E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\AddBookWindow.baml
+E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\AddBookWindow.g.cs
+E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\EditGenreWindow.baml
+E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\EditGenreWindow.g.cs
+E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\EditAuthorWindow.baml
+E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\EditAuthorWindow.g.cs

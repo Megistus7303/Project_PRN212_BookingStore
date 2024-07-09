@@ -20,34 +20,39 @@
         <!-- Main Content -->
         <Grid Margin="10">
             <StackPanel>
-                <!-- Sort Selection Box -->
-                <StackPanel Orientation="Horizontal" Margin="10">
-                    <TextBlock Text="Sort by:" VerticalAlignment="Center" Margin="0,0,10,0"/>
-                    <ComboBox Name="SortComboBox" Width="150" SelectionChanged="SortComboBox_SelectionChanged">
-                        <ComboBoxItem Content="Date Added" Tag="DateAdded" IsSelected="True"/>
-                        <ComboBoxItem Content="Name A-Z" Tag="NameAZ"/>
-                        <ComboBoxItem Content="Name Z-A" Tag="NameZA"/>
-                    </ComboBox>
-                </StackPanel>
-                <!-- User Data Grid -->
-                <DataGrid Name="UsersDataGrid" AutoGenerateColumns="False" Margin="10">
-                    <DataGrid.Columns>
-                        <DataGridTextColumn Header="#" Width="Auto"/>
-                        <DataGridTextColumn Header="Username" Binding="{Binding Username}" Width="*"/>
-                        <DataGridTextColumn Header="Products" Binding="{Binding Products}" Width="*"/>
-                        <DataGridTextColumn Header="Address" Binding="{Binding Address}" Width="*"/>
-                        <DataGridTextColumn Header="Phone Number" Binding="{Binding PhoneNumber}" Width="*"/>
-                        <DataGridTemplateColumn Header="" Width="Auto">
-                            <!--<DataGridTemplateColumn.CellTemplate>
-                             <DataTemplate>
-                                 <Button Content="Detail" Click="DetailsButton_Click"/>
-                             </DataTemplate>
-                         </DataGridTemplateColumn.CellTemplate>-->
-                        </DataGridTemplateColumn>
-
-
-                    </DataGrid.Columns>
-                </DataGrid>
+                <Grid Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Horizontal" Grid.Column="0">
+                        <TextBlock Text="Genre Name:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                        <TextBox Name="txtGenreName" Width="200"/>
+                    </StackPanel>
+                    <Button Content="Add New Genre" Click="AddNewGenreButton_Click" Width="120" Height="30" HorizontalAlignment="Right" Grid.Column="1"/>
+                </Grid>
+                <ListView Name="lvGenres" Margin="10">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Genre ID" Width="100" DisplayMemberBinding="{Binding Path=GenreId}"/>
+                            <GridViewColumn Header="Genre Name" Width="200" DisplayMemberBinding="{Binding Path=GenreName}"/>
+                            <GridViewColumn Header="Edit" Width="Auto">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Content="Edit" Click="EditButton_Click"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                            <GridViewColumn Header="Delete" Width="Auto">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Content="Delete" Click="DeleteButton_Click"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
             </StackPanel>
         </Grid>
     </DockPanel>

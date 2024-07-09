@@ -8,9 +8,9 @@
             <TextBlock Text="Name:" FontWeight="Bold"/>
             <TextBox Name="tbBookName" Margin="0,0,0,10"/>
             <TextBlock Text="Author:" FontWeight="Bold"/>
-            <TextBox Name="tbAuthorName" Margin="0,0,0,10"/>
+            <ComboBox Name="cmbAuthor" DisplayMemberPath="AuthorName" SelectedValuePath="AuthorId" Margin="0,0,0,10"/>
             <TextBlock Text="Genre:" FontWeight="Bold"/>
-            <TextBox Name="tbGenreName" Margin="0,0,0,10"/>
+            <ComboBox Name="cmbGenre" DisplayMemberPath="GenreName" SelectedValuePath="GenreId" Margin="0,0,0,10"/>
             <TextBlock Text="Quantity:" FontWeight="Bold"/>
             <TextBox Name="tbBookQuantity" Margin="0,0,0,10"/>
             <TextBlock Text="Price Input:" FontWeight="Bold"/>

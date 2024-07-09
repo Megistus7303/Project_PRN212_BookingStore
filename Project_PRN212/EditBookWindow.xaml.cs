@@ -1,39 +1,52 @@
 ﻿using Project_PRN212.Models;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Project_PRN212
 {
-    /// <summary>
-    /// Interaction logic for EditBookWindow.xaml
-    /// </summary>
     public partial class EditBookWindow : Window
     {
         private Book _book;
+
         public EditBookWindow(Book book)
         {
             InitializeComponent();
             _book = book;
 
+            // Populate genres ComboBox
+            PopulateGenresComboBox();
+
+            // Populate authors ComboBox
+            PopulateAuthorsComboBox();
+
+            // Set existing book details
             tbBookName.Text = book.BookName;
             tbBookQuantity.Text = book.Quantity.ToString();
             tbBookPriceIn.Text = book.PriceInput.ToString();
             tbBookPriceOut.Text = book.PriceOutput.ToString();
-            tbGenreName.Text = book.GenreId;
-            tbAuthorName.Text = book.AuthorId;
-            tbBookDetail.Text = book.Detailbook.ToString();
-            
+            tbBookDetail.Text = book.Detailbook;
+
+            // Select current genre and author in ComboBoxes
+            cmbGenre.SelectedValue = book.GenreId;
+            cmbAuthor.SelectedValue = book.AuthorId;
+        }
+
+        private void PopulateGenresComboBox()
+        {
+            using (Prn212AssignmentBookShoppingContext context = new Prn212AssignmentBookShoppingContext())
+            {
+                var genres = context.Genres.ToList();
+                cmbGenre.ItemsSource = genres;
+            }
+        }
+
+        private void PopulateAuthorsComboBox()
+        {
+            using (Prn212AssignmentBookShoppingContext context = new Prn212AssignmentBookShoppingContext())
+            {
+                var authors = context.Authors.ToList();
+                cmbAuthor.ItemsSource = authors;
+            }
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
@@ -47,8 +60,8 @@ namespace Project_PRN212
                     bookToUpdate.Quantity = int.Parse(tbBookQuantity.Text);
                     bookToUpdate.PriceInput = double.Parse(tbBookPriceIn.Text);
                     bookToUpdate.PriceOutput = double.Parse(tbBookPriceOut.Text);
-                    bookToUpdate.GenreId = tbGenreName.Text;
-                    bookToUpdate.AuthorId = tbAuthorName.Text;
+                    bookToUpdate.GenreId = cmbGenre.SelectedValue.ToString(); // Update genre
+                    bookToUpdate.AuthorId = cmbAuthor.SelectedValue.ToString(); // Update author
                     bookToUpdate.Detailbook = tbBookDetail.Text;
 
                     context.SaveChanges();
@@ -58,5 +71,3 @@ namespace Project_PRN212
         }
     }
 }
-
-
