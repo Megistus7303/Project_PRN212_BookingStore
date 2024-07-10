@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\
 Project_PRN212
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-E:\C# project\Project_PRN212\Project_PRN212\App.xaml
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\App.xaml
 13-1733239774
 
-271327655460
-2441996432838
+28326150984
+244467949805
 AddBookWindow.xaml;AuthorListWindow.xaml;EditAuthorWindow.xaml;EditBookWindow.xaml;EditGenreWindow.xaml;GenreListWindow.xaml;HomeContent.xaml;MainWindow.xaml;OrderListWindow.xaml;ProductDetailWindow.xaml;ProductListWindow.xaml;Sidebar.xaml;UsersWindow.xaml;
 
-True
+False
 
