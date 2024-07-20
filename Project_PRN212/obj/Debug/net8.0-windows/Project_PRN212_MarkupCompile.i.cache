@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\
+D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\
 Project_PRN212
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-E:\C# project\Project_PRN212\Project_PRN212\App.xaml
-13-1733239774
+D:\FPT\K5\PRN212\Ass\Project_PRN212\App.xaml
+20-1255285058
 
-271327655460
-2441996432838
-AddBookWindow.xaml;AuthorListWindow.xaml;EditAuthorWindow.xaml;EditBookWindow.xaml;EditGenreWindow.xaml;GenreListWindow.xaml;HomeContent.xaml;MainWindow.xaml;OrderListWindow.xaml;ProductDetailWindow.xaml;ProductListWindow.xaml;Sidebar.xaml;UsersWindow.xaml;
+341114677058
+247-1722707820
+AddBookWindow.xaml;AuthorListWindow.xaml;changePassword.xaml;Checkout.xaml;CustomMessageBox.xaml;EditAuthorWindow.xaml;EditBookWindow.xaml;EditGenreWindow.xaml;GenreListWindow.xaml;HomeContent.xaml;Login.xaml;MainWindow.xaml;OrderListWindow.xaml;Orders.xaml;ProductDetailWindow.xaml;ProductListWindow.xaml;Register.xaml;Sidebar.xaml;userProfile.xaml;UsersWindow.xaml;
 
 True
 
