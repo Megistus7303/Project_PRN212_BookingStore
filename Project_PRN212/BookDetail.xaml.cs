@@ -1,4 +1,5 @@
-﻿using Project_PRN212.Models;
+﻿using Microsoft.Identity.Client;
+using PRN212_Assignment.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Project_PRN212
+namespace PRN212_Assignment
 {
     /// <summary>
     /// Interaction logic for BookDetail.xaml

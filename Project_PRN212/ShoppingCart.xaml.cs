@@ -1,4 +1,7 @@
-﻿using Project_PRN212.Models;
+﻿using Azure;
+using Microsoft.VisualBasic.ApplicationServices;
+using Microsoft.VisualBasic.Logging;
+using PRN212_Assignment.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,26 +15,34 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Menu;
+using System;
+using System.Configuration;
+using log4net;
 
-namespace Project_PRN212
+
+namespace PRN212_Assignment
 {
     /// <summary>
     /// Interaction logic for ShoppingCart.xaml
     /// </summary>
     public partial class ShoppingCart : Window
     {
+        String userIDfound;
         public ShoppingCart()
         {
             InitializeComponent();
         }
         public ShoppingCart(String UserID)
         {
+            userIDfound = UserID;
             InitializeComponent();
             LoadedCart(UserID);
         }
         public ShoppingCart(String BookID, String UserID, int Quantity)
         {
             InitializeComponent();
+            userIDfound = UserID;
             using (Prn212AssignmentBookShoppingContext context = new Prn212AssignmentBookShoppingContext())
             {
                 Book book = context.Carts.Where(e => e.UserId == UserID && e.BookId == BookID).Select(e => e.Book).FirstOrDefault();
@@ -70,11 +81,11 @@ namespace Project_PRN212
                 var list = context.Carts.Where(e => e.UserId == UserID).ToList();
                 lvCartList.ItemsSource = list;
                 double totalcost = 0;
-                foreach (var item in list)
+                foreach(var item in list)
                 {
-                    totalcost = totalcost + item.BookPrice;
+                    totalcost=totalcost+item.BookPrice;
                 }
-                lblTotalPrice.Content = "Total: " + totalcost;
+                lblTotalPrice.Content = "Total: "+totalcost;
             }
 
         }
@@ -120,6 +131,56 @@ namespace Project_PRN212
             HomePage homePage = new HomePage();
             this.Close();
             homePage.Show();
+        }
+
+
+        private String generatenextOrderID()
+        {
+            using (Prn212AssignmentBookShoppingContext context = new Prn212AssignmentBookShoppingContext())
+            {
+                // Get the maximum numeric part of the CartId
+                int maxNumericPart = context.Orders.AsEnumerable()
+                    .Select(e => int.Parse(e.OrderId.Substring(3)))
+                    .Max();
+
+                // Format the result back to the CRTxxx format
+                string maxCartID = $"ORD{maxNumericPart + 1:D3}";
+                return maxCartID;
+            }
+        }
+
+
+        private void btnCheckOut_Click(object sender, RoutedEventArgs e)
+        {
+            Double Cost = 0;
+            using (Prn212AssignmentBookShoppingContext context = new Prn212AssignmentBookShoppingContext())
+            {
+                foreach (var item in lvCartList.ItemsSource)
+                {
+                    Cart itemCart = item as Cart;
+                    if (itemCart != null)
+                    {
+                        Cost=Cost+itemCart.BookPrice;
+                        Order order = new Order()
+                        {
+                            OrderId = generatenextOrderID(),
+                            UserId = itemCart.UserId,
+                            BookId = itemCart.BookId,
+                            Quantity = itemCart.Quantity,
+                            OrderStatus = "Processing"
+                        };
+                        context.Orders.Add(order);
+                        context.Carts.Remove(itemCart);
+                        context.SaveChanges();
+                    }
+
+                }
+            }
+
+            //PayMent pay = new PayMent(Cost);
+            //pay.Show();
+            MessageBox.Show("You order successfully");
+            LoadedCart(userIDfound);
         }
     }
 }
