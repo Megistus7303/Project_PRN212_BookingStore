@@ -165,3 +165,31 @@ E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\EditGenreWi
 E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\EditGenreWindow.g.cs
 E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\EditAuthorWindow.baml
 E:\C# project\Project_PRN212\Project_PRN212\obj\Debug\net8.0-windows\EditAuthorWindow.g.cs
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\Project_PRN212.csproj.AssemblyReference.cache
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\AddBookWindow.baml
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\EditAuthorWindow.baml
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\EditBookWindow.baml
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\EditGenreWindow.baml
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\HomeContent.baml
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\ProductDetailWindow.baml
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\Sidebar.baml
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\AddBookWindow.g.cs
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\AuthorListWindow.g.cs
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\BookDetail.g.cs
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\EditAuthorWindow.g.cs
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\EditBookWindow.g.cs
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\EditGenreWindow.g.cs
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\GenreListWindow.g.cs
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\HomeContent.g.cs
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\HomePage.g.cs
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\OrderListWindow.g.cs
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\ProductDetailWindow.g.cs
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\ProductListWindow.g.cs
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\ShoppingCart.g.cs
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\Sidebar.g.cs
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\UsersWindow.g.cs
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\App.g.cs
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\Project_PRN212_MarkupCompile.cache
+D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\Project_PRN212_MarkupCompile.lref

@@ -60,7 +60,7 @@ namespace Project_PRN212 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Project_PRN212;V1.0.0.0;component/editauthorwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Project_PRN212;component/editauthorwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\EditAuthorWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

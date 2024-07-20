@@ -100,7 +100,7 @@ namespace Project_PRN212 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Project_PRN212;V1.0.0.0;component/sidebar.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Project_PRN212;component/sidebar.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Sidebar.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

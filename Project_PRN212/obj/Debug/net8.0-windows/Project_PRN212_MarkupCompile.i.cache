@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\PRN212\PRN212_test_3\Project_PRN212_BookingStore\Project_PRN212\App.xaml
-13-1733239774
+16725645366
 
-28326150984
+31-1113249685
 244467949805
-AddBookWindow.xaml;AuthorListWindow.xaml;EditAuthorWindow.xaml;EditBookWindow.xaml;EditGenreWindow.xaml;GenreListWindow.xaml;HomeContent.xaml;MainWindow.xaml;OrderListWindow.xaml;ProductDetailWindow.xaml;ProductListWindow.xaml;Sidebar.xaml;UsersWindow.xaml;
+AddBookWindow.xaml;AuthorListWindow.xaml;BookDetail.xaml;EditAuthorWindow.xaml;EditBookWindow.xaml;EditGenreWindow.xaml;GenreListWindow.xaml;HomeContent.xaml;HomePage.xaml;MainWindow.xaml;OrderListWindow.xaml;ProductDetailWindow.xaml;ProductListWindow.xaml;ShoppingCart.xaml;Sidebar.xaml;UsersWindow.xaml;
 
 False
 
