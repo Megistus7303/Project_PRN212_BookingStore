@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Project_PRN212.Models;
+namespace PRN212_Assignment.Models;
 
 public partial class User
 {

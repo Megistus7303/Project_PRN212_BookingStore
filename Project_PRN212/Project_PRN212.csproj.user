@@ -13,6 +13,9 @@
     <Compile Update="AuthorListWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="BookDetail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="EditAuthorWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -28,6 +31,9 @@
     <Compile Update="HomeContent.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="HomePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="OrderListWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -35,6 +41,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="ProductListWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ShoppingCart.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Sidebar.xaml.cs">
@@ -49,6 +58,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="AuthorListWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BookDetail.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="EditAuthorWindow.xaml">
@@ -66,6 +78,9 @@
     <Page Update="HomeContent.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="HomePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -76,6 +91,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ProductListWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ShoppingCart.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Sidebar.xaml">
