@@ -117,9 +117,12 @@ namespace PRN212_Assignment
 
         private void btnCart_Click(object sender, RoutedEventArgs e)
         {
-            ShoppingCart cart = new ShoppingCart("USER001");
+            Login login = new Login();
+            login.Show(); 
             this.Close();
-            cart.Show();
+            //ShoppingCart cart = new ShoppingCart("USER001");
+            //this.Close();
+            //cart.Show();
         }
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
