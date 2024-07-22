@@ -3,7 +3,7 @@ using System.Windows.Controls;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace Project_PRN212
+namespace PRN212_Assignment
 {
     public partial class Sidebar : UserControl, INotifyPropertyChanged
     {

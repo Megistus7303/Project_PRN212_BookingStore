@@ -3,7 +3,7 @@
 using System.Linq;
 using System.Windows;
 
-namespace Project_PRN212
+namespace PRN212_Assignment
 {
     public partial class EditAuthorWindow : Window
     {

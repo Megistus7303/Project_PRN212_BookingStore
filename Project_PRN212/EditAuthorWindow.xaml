@@ -1,4 +1,4 @@
-﻿<Window x:Class="Project_PRN212.EditAuthorWindow"
+﻿<Window x:Class="PRN212_Assignment.EditAuthorWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Edit Author" Height="300" Width="400">
