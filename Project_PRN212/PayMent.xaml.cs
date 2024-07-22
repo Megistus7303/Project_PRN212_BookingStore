@@ -12,7 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using log4net;
+
 using static PayMent1;
 namespace PRN212_Assignment
 {

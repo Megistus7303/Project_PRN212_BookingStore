@@ -4542,23 +4542,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {},
-    "D:\\visualstudio\\SDKs\\NuGetPackages": {}
+    "C:\\Users\\admin\\.nuget\\packages\\": {},
+    "E:\\Visual Studio Shared components, tools, SDKs\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PRN212\\PRN212_test_3\\Project_PRN212_BookingStore\\Project_PRN212\\Project_PRN212.csproj",
+      "projectUniqueName": "E:\\C# project\\Project_PRN212_ThinhBranch\\Project_PRN212_BookingStore\\Project_PRN212\\Project_PRN212.csproj",
       "projectName": "Project_PRN212",
-      "projectPath": "D:\\PRN212\\PRN212_test_3\\Project_PRN212_BookingStore\\Project_PRN212\\Project_PRN212.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "D:\\PRN212\\PRN212_test_3\\Project_PRN212_BookingStore\\Project_PRN212\\obj\\",
+      "projectPath": "E:\\C# project\\Project_PRN212_ThinhBranch\\Project_PRN212_BookingStore\\Project_PRN212\\Project_PRN212.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "E:\\C# project\\Project_PRN212_ThinhBranch\\Project_PRN212_BookingStore\\Project_PRN212\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\visualstudio\\SDKs\\NuGetPackages"
+        "E:\\Visual Studio Shared components, tools, SDKs\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4631,7 +4631,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -18,7 +18,7 @@ using System.Windows.Shapes;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Menu;
 using System;
 using System.Configuration;
-using log4net;
+
 
 
 namespace PRN212_Assignment
