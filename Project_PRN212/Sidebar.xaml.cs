@@ -52,6 +52,19 @@ namespace Project_PRN212
             GenresButtonBackground = CurrentPage == "Genres" ? "#008B8B" : "#34495E";
             AuthorsButtonBackground = CurrentPage == "Authors" ? "#008B8B" : "#34495E";
 
+            // Notify UI about changes
+            OnPropertyChanged(nameof(HomeButtonEnabled));
+            OnPropertyChanged(nameof(UsersButtonEnabled));
+            OnPropertyChanged(nameof(ProductsButtonEnabled));
+            OnPropertyChanged(nameof(OrdersButtonEnabled));
+            OnPropertyChanged(nameof(GenresButtonEnabled));
+            OnPropertyChanged(nameof(AuthorsButtonEnabled));
+            OnPropertyChanged(nameof(HomeButtonBackground));
+            OnPropertyChanged(nameof(UsersButtonBackground));
+            OnPropertyChanged(nameof(ProductsButtonBackground));
+            OnPropertyChanged(nameof(OrdersButtonBackground));
+            OnPropertyChanged(nameof(GenresButtonBackground));
+            OnPropertyChanged(nameof(AuthorsButtonBackground));
         }
 
         public bool HomeButtonEnabled { get; set; }
