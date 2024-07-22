@@ -62,7 +62,8 @@ namespace PRN212_Assignment
                     homePageCustomer.Show();
                     break;
                 case "Manager":
-
+                    DashboardManage dashboardManage = new DashboardManage(user);
+                    dashboardManage.Show();
                     break;
                 default:
                     CustomMessageBox.Show("Unknown role. Please contact support.");
