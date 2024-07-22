@@ -54,7 +54,7 @@
 
                 <TextBlock Text="Password: " 
                            Foreground="{DynamicResource PrimaryHueDarkBrush}" 
-                           Margin="0,48,0,76" 
+                           Margin="0,48,0,88" 
                            Grid.Row="5"/>
                 <PasswordBox x:Name="PasswordBox" 
                              Style="{DynamicResource MaterialDesignFilledPasswordFieldBox}"

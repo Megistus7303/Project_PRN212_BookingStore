@@ -18,7 +18,7 @@
                VerticalAlignment="Center" FontFamily="Bell MT"/>
         <TextBlock x:Name="UserNameTextBlock"
                    Grid.Row="0"
-                   Margin="89,0,10,0"
+                   Margin="89,0,10,3"
                    FontSize="16"
                    FontWeight="Bold"
                    VerticalAlignment="Center"/>

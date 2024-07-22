@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_demo"
         mc:Ignorable="d"
-        Title="User Profile" Height="600" Width="800">
-    <Grid Background="#f8f5f5" Margin="0,0,0,180">
+        Title="User Profile" Height="500
+" Width="800">
+    <Grid Background="#f8f5f5">
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0">
             <StackPanel Width="167" Margin="0,0,15,0">
                 <Button x:Name="InformationButton" Content="Information" Margin="0,10,0,10" Click="Button_Click_1"/>
@@ -15,14 +16,13 @@
                 <Button x:Name="BackToHomepageButton" Content="Back to Homepage" Margin="0,10,0,10" Click="BackToHomepage_Click"/>
                 <Button x:Name="LogOutButton" Content="Log Out" Margin="0,10,0,10" Background="#428bca" Foreground="White" Click="LogOut_Click"/>
             </StackPanel>
-            <Border Background="White" Padding="20" Width="600" Height="Auto">
+            <Border Background="White" Padding="20" Width="608" Height="449">
                 <StackPanel Margin="0,0,0,0">
                     <Border Width="100" Height="100" Background="Linen" Margin="0,0,0,10">
-                        <Image x:Name="ProfileImage" Width="100" Height="100" 
-                            Source="pack://application:,,,/Images/user_icon.png"></Image>
+                        <Image Source="/Images/user_icon.png" />
                     </Border>
 
-                    <StackPanel Orientation="Vertical" Margin="10,0,0,0" Width="580">
+                    <StackPanel Orientation="Vertical" Margin="10,0,0,0" Width="555">
                         <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                             <TextBlock Text="Username: " FontWeight="Bold" Height="21" VerticalAlignment="Center" FontSize="16"/>
                             <TextBlock Width="500" x:Name="UsernameTextBlock" Height="25" Margin="0,10,0,0"/>
@@ -46,7 +46,7 @@
                             <TextBlock Text="Address: " FontWeight="Bold" Width="88" FontSize="16"/>
                             <TextBox Width="474" x:Name="AddressTextBox"/>
                         </StackPanel>
-                        <Button Content="Update" Width="96" Background="#428bca" Foreground="White" Height="34" Click="Button_Click" Margin="0,10,0,0"/>
+                        <Button Content="Update" Width="96" Background="#428bca" Foreground="White" Height="34" Click="Button_Click" Margin="0,20,0,0"/>
                     </StackPanel>
                 </StackPanel>
             </Border>

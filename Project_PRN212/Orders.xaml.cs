@@ -52,7 +52,7 @@ namespace Project_PRN212
 
         private void SetUserName(string firstName, string lastName)
         {
-            UserNameTextBlock.Text = $"User: {firstName} {lastName}";
+            UserNameTextBlock.Text = $"{firstName} {lastName}";
         }
 
         private void Close_Click(object sender, RoutedEventArgs e)

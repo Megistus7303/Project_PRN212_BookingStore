@@ -1,7 +1,5 @@
-﻿using System.Linq;
+﻿using Project_PRN212.Models;
 using System.Windows;
-using System.Windows.Input;
-using Project_PRN212.Models;
 
 namespace Project_PRN212
 {
