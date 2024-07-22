@@ -138,5 +138,19 @@ namespace PRN212_Assignment
                 }).ToList();
             }
         }
+
+        private void btnLogIn_Click(object sender, RoutedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show(); 
+            this.Close();
+        }
+
+        private void btnSignUp_Click(object sender, RoutedEventArgs e)
+        {
+            Register register = new Register();
+            register.Show();
+            this.Close(); 
+        }
     }
 }

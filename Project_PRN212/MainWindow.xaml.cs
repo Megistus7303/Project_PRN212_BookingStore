@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.Windows;
 
-namespace Project_PRN212
+namespace PRN212_Assignment
 {
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
