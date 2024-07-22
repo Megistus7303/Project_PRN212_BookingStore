@@ -17,7 +17,6 @@ using System.IO;
 
 namespace PRN212_Assignment
 {
-
     public partial class Orders : Window
     {
         private readonly Prn212AssignmentBookShoppingContext _context;
@@ -37,7 +36,7 @@ namespace PRN212_Assignment
         private void LoadOrders()
         {
             var orders = _context.Orders
-                .Where(order => order.UserId == _loggedInUser.UserId) 
+                .Where(order => order.UserId == _loggedInUser.UserId)
                 .Select(order => new
                 {
                     OrderId = order.OrderId,
@@ -101,6 +100,40 @@ namespace PRN212_Assignment
                 }
             }
         }
-    }
 
+        private void SearchButton_Click(object sender, RoutedEventArgs e)
+        {
+            string searchText = SearchTextBox.Text.ToLower();
+
+            var filteredOrders = _context.Orders
+                .Where(order => order.UserId == _loggedInUser.UserId &&
+                                (order.Book.BookName.ToLower().Contains(searchText) ||
+                                 order.OrderStatus.ToLower().Contains(searchText)))
+                .Select(order => new
+                {
+                    OrderId = order.OrderId,
+                    BookName = order.Book.BookName,
+                    Quantity = order.Quantity,
+                    OrderStatus = order.OrderStatus
+                })
+                .ToList();
+
+            OrdersListView.ItemsSource = filteredOrders;
+        }
+
+        private void OrdersListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+           
+            if (OrdersListView.SelectedItem != null)
+            {
+                
+                var orders = OrdersListView.ItemsSource.Cast<dynamic>().ToList();
+
+                var sortedOrders = orders.OrderBy(order => order.Quantity).ToList();
+
+                OrdersListView.ItemsSource = sortedOrders;
+            }
+        }
+
+    }
 }

@@ -12,14 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace WPF_demo
+namespace Project_PRN212
 {
     /// <summary>
-    /// Interaction logic for Checkout.xaml
+    /// Interaction logic for DashboardManage.xaml
     /// </summary>
-    public partial class Checkout : Window
+    public partial class DashboardManage : Window
     {
-        public Checkout()
+        public DashboardManage()
         {
             InitializeComponent();
         }

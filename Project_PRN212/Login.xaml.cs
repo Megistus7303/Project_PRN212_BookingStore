@@ -59,6 +59,9 @@ namespace PRN212_Assignment
                     userProfile customerProfile = new userProfile(user);
                     customerProfile.Show();
                     break;
+                case "Manager":
+
+                    break;
                 default:
                     CustomMessageBox.Show("Unknown role. Please contact support.");
                     break;

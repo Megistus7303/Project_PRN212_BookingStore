@@ -6,6 +6,7 @@ D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\EditBookWindow.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\EditGenreWindow.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\HomeContent.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\Login.baml
+D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\Orders.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\ProductDetailWindow.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\Register.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\Sidebar.baml
@@ -13,7 +14,6 @@ D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\AddBookWindow.g.cs
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\AuthorListWindow.g.cs
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\BookDetail.g.cs
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\changePassword.g.cs
-D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\Checkout.g.cs
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\CustomMessageBox.g.cs
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\EditAuthorWindow.g.cs
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\EditBookWindow.g.cs
@@ -34,10 +34,12 @@ D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\ShoppingCart.g.cs
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\Sidebar.g.cs
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\userProfile.g.cs
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\UsersWindow.g.cs
+D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\App.g.cs
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\Project_PRN212_MarkupCompile.cache
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\Project_PRN212_MarkupCompile.lref
-D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\App.g.cs
+D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\changePassword.baml
+D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\userProfile.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\bin\Debug\net8.0-windows\Images\user_icon.png
 D:\FPT\K5\PRN212\Ass\Project_PRN212\bin\Debug\net8.0-windows\Project_PRN212.exe
 D:\FPT\K5\PRN212\Ass\Project_PRN212\bin\Debug\net8.0-windows\appsettings.json
@@ -169,18 +171,14 @@ D:\FPT\K5\PRN212\Ass\Project_PRN212\bin\Debug\net8.0-windows\runtimes\win\lib\ne
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\App.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\AuthorListWindow.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\BookDetail.baml
-D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\changePassword.baml
-D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\Checkout.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\GenreListWindow.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\HomePage.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\HomePageCustomer.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\MainWindow.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\OrderListWindow.baml
-D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\Orders.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\PayMent.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\ProductListWindow.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\ShoppingCart.baml
-D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\userProfile.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\UsersWindow.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\Project_PRN212.g.resources
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\Project_PRN212.GeneratedMSBuildEditorConfig.editorconfig
@@ -194,3 +192,7 @@ D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\refint\Project_PRN2
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\Project_PRN212.pdb
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\Project_PRN212.genruntimeconfig.cache
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\ref\Project_PRN212.dll
+D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\UserAuthorization.baml
+D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\DashboardManage.g.cs
+D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\UserAuthorization.g.cs
+D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\DashboardManage.baml
