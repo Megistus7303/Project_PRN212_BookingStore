@@ -7,7 +7,7 @@ using PRN212_Assignment.Models;
 
 
 
-namespace Project_PRN212
+namespace PRN212_Assignment
 {
     public partial class AuthorListWindow : Window
     {

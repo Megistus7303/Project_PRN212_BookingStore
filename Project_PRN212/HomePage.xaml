@@ -13,10 +13,10 @@
         <Run Text="Shopping" FontWeight="Bold" Foreground="Red"/>
         </TextBlock>
         <WrapPanel Orientation="Horizontal" Margin="0,12,10,362" HorizontalAlignment="Right" Width="524">
-            <Button x:Name="btnHomePage" Content="Home Page" Margin="12" Width="100" Height="30" />
+            <Button x:Name="btnHomePage" Content="Home Page" Width="108" Height="30" />
             <Button x:Name="btnCart" Content="Cart" Margin="12" Width="100" Height="30" Click="btnCart_Click"/>
-            <Button x:Name="btnLogIn"  Content="Login" Margin="12" Width="100" Height="30"/>
-            <Button x:Name="btnSignUp"  Content="Sign Up" Margin="12" Width="100" Height="30"/>
+            <Button x:Name="btnLogIn"  Content="Login" Margin="12" Width="100" Height="30" Click="btnLogIn_Click"/>
+            <Button x:Name="btnSignUp"  Content="Sign Up" Margin="12" Width="100" Height="30" Click="btnSignUp_Click"/>
         </WrapPanel>
         <ListView x:Name="lvBookList" Margin="10,215,56,71" SelectionChanged="lvBookList_SelectionChanged" >
             <ListView.View>
@@ -38,8 +38,8 @@
         </ListView>
         <WrapPanel Margin="10,71,566,405">
             <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Height="33" Width="128"/>
-            <Button x:Name="btnSearch"  Content="Search" Width="59" Click="btnSearch_Click"/>
+            <Button x:Name="btnSearch"  Content="Search" Width="82" Click="btnSearch_Click"/>
         </WrapPanel>
-        
+
     </Grid>
 </Window>

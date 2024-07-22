@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\C# project\Project_PRN212_ThinhBranch\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\
+C:\Users\admin\Desktop\PRN212_Project\Project_PRN212_BookingStore\Project_PRN212\obj\Debug\net8.0-windows\
 Project_PRN212
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-E:\C# project\Project_PRN212_ThinhBranch\Project_PRN212_BookingStore\Project_PRN212\App.xaml
-181811663085
+C:\Users\admin\Desktop\PRN212_Project\Project_PRN212_BookingStore\Project_PRN212\App.xaml
+26-1320830198
 
-34-1724775763
-2441996432838
-AddBookWindow.xaml;AuthorListWindow.xaml;BookDetail.xaml;EditAuthorWindow.xaml;EditBookWindow.xaml;EditGenreWindow.xaml;GenreListWindow.xaml;HomeContent.xaml;HomePage.xaml;HomePageCustomer.xaml;MainWindow.xaml;OrderListWindow.xaml;PayMent.xaml;ProductDetailWindow.xaml;ProductListWindow.xaml;ShoppingCart.xaml;Sidebar.xaml;UsersWindow.xaml;
+421407636356
+247-257049195
+AddBookWindow.xaml;AuthorListWindow.xaml;BookDetail.xaml;changePassword.xaml;CustomMessageBox.xaml;DashboardManage.xaml;EditAuthorWindow.xaml;EditBookWindow.xaml;EditGenreWindow.xaml;GenreListWindow.xaml;HomeContent.xaml;HomePage.xaml;HomePageCustomer.xaml;Login.xaml;MainWindow.xaml;OrderListWindow.xaml;Orders.xaml;PayMent.xaml;ProductDetailWindow.xaml;ProductListWindow.xaml;Register.xaml;ShoppingCart.xaml;Sidebar.xaml;UserAuthorization.xaml;userProfile.xaml;UsersWindow.xaml;
 
 False
 

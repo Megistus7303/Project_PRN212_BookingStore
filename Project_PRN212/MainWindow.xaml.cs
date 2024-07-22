@@ -1,19 +1,33 @@
-﻿using System.ComponentModel;
+﻿using PRN212_Assignment.Models;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows;
 
-namespace Project_PRN212
+namespace PRN212_Assignment
 {
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
         private string _currentPage;
+         private User _loggedInUser;
 
-        public MainWindow()
+        public MainWindow(User loggedInUser)
         {
             InitializeComponent();
             DataContext = this;
             CurrentPage = "Home"; // Set trang khởi đầu
+            _loggedInUser = loggedInUser;
+
         }
+
+        private void LogoutButton_Click(object sender, RoutedEventArgs e)
+        {
+            _loggedInUser = null;
+            var loginWindow = new Login();
+            loginWindow.Show();
+            this.Close();
+        }
+
+
 
         public string CurrentPage
         {
@@ -33,5 +47,7 @@ namespace Project_PRN212
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
+
+        
     }
 }

@@ -1,0 +1,52 @@
+﻿<Window x:Class="PRN212_Assignment.UserAuthorization"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="User Authorization" Height="400" Width="600">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10">
+            <Grid Margin="0,0,0,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Manage Users" FontSize="20" FontWeight="Bold" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                <TextBlock x:Name="ManagerNameTextBlock" Text="Manager Name" FontSize="16" FontWeight="Bold" Grid.Column="1" VerticalAlignment="Center"/>
+            </Grid>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBox x:Name="SearchUserTextBox" Width="200" Margin="0,0,10,0"/>
+                <Button Content="Search" Width="100" Click="SearchButton_Click"/>
+            </StackPanel>
+
+            <ListView x:Name="UserListView" Height="200">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="User ID" DisplayMemberBinding="{Binding UserId}" Width="150"/>
+                        <GridViewColumn Header="Username" DisplayMemberBinding="{Binding Username}" Width="150"/>
+                        <GridViewColumn Header="Role" Width="150">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <ComboBox SelectedItem="{Binding Role}" Width="120">
+                                        <ComboBoxItem Content="Admin"/>
+                                        <ComboBoxItem Content="User"/>
+                                    </ComboBox>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Email" DisplayMemberBinding="{Binding Email}" Width="200"/>
+                        <GridViewColumn Header="Delete" Width="100">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Content="Delete" Click="DeleteButton_Click"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+            <Button Content="Cancel" Width="100" Margin="0,10,0,0" Click="CancelButton_Click" HorizontalAlignment="Right" Background="IndianRed"/>
+        </StackPanel>
+    </Grid>
+</Window>

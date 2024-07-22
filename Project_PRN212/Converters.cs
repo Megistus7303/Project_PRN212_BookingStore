@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Windows.Data;
 using System.Windows.Media;
 
-namespace Project_PRN212
+namespace PRN212_Assignment
 {
     public class PageToColorConverter : IValueConverter
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project_PRN212
+namespace PRN212_Assignment
 {
     internal class Test
     {

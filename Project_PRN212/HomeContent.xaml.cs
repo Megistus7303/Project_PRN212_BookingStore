@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace Project_PRN212
+namespace PRN212_Assignment
 {
     public partial class HomeContent : UserControl
     {

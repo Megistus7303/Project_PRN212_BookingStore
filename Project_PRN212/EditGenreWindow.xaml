@@ -1,4 +1,4 @@
-﻿<Window x:Class="Project_PRN212.EditGenreWindow"
+﻿<Window x:Class="PRN212_Assignment.EditGenreWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Edit Genre" Height="200" Width="400">
