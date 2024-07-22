@@ -29,7 +29,7 @@
                         <TextBlock Text="Genre Name:" VerticalAlignment="Center" Margin="0,0,10,0"/>
                         <TextBox Name="txtGenreName" Width="200"/>
                     </StackPanel>
-                    <Button Content="Add New Genre" Click="AddNewGenreButton_Click" Width="120" Height="30" HorizontalAlignment="Right" Grid.Column="1"/>
+                    <Button Content="Add New Genre" Click="AddNewGenreButton_Click" Width="146" Height="30" HorizontalAlignment="Left" Grid.ColumnSpan="2" Margin="414,0,0,0"/>
                 </Grid>
                 <ListView Name="lvGenres" Margin="10">
                     <ListView.View>

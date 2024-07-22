@@ -4680,19 +4680,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {}
+    "C:\\Users\\admin\\.nuget\\packages\\": {},
+    "E:\\Visual Studio Shared components, tools, SDKs\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FPT\\K5\\PRN212\\Ass\\Project_PRN212\\Project_PRN212.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Desktop\\PRN212_Project\\Project_PRN212_BookingStore\\Project_PRN212\\Project_PRN212.csproj",
       "projectName": "Project_PRN212",
-      "projectPath": "D:\\FPT\\K5\\PRN212\\Ass\\Project_PRN212\\Project_PRN212.csproj",
+      "projectPath": "C:\\Users\\admin\\Desktop\\PRN212_Project\\Project_PRN212_BookingStore\\Project_PRN212\\Project_PRN212.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\FPT\\K5\\PRN212\\Ass\\Project_PRN212\\obj\\",
+      "outputPath": "C:\\Users\\admin\\Desktop\\PRN212_Project\\Project_PRN212_BookingStore\\Project_PRN212\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "E:\\Visual Studio Shared components, tools, SDKs\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4700,6 +4705,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4771,7 +4777,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

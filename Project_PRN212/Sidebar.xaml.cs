@@ -2,6 +2,7 @@
 using System.Windows.Controls;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using PRN212_Assignment.Models;
 
 namespace PRN212_Assignment
 {
@@ -10,6 +11,7 @@ namespace PRN212_Assignment
         public event PropertyChangedEventHandler PropertyChanged;
 
         private string _currentPage;
+        private User _loggedInUser;
 
         public string CurrentPage
         {
@@ -83,7 +85,7 @@ namespace PRN212_Assignment
 
         private void HomeButton_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
+            MainWindow mainWindow = new MainWindow(_loggedInUser);
             mainWindow.Show();
             Window.GetWindow(this).Close();
         }
@@ -97,7 +99,7 @@ namespace PRN212_Assignment
 
         private void ProductsButton_Click(object sender, RoutedEventArgs e)
         {
-            ProductListWindow productListWindow = new ProductListWindow();
+            ProductListWindow productListWindow = new ProductListWindow(_loggedInUser);
             productListWindow.Show();
             Window.GetWindow(this).Close();
         }

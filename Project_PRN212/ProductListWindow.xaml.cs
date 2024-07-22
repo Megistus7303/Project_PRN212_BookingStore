@@ -1,21 +1,31 @@
-﻿using PRN212_Assignment.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Win32;
+using PRN212_Assignment.Models;
 using System.ComponentModel;
+using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
 
 namespace PRN212_Assignment
 {
     public partial class ProductListWindow : Window, INotifyPropertyChanged
     {
         private string _currentPage;
+        
+        private User _loggedInUser;
 
-        public ProductListWindow()
+        public ProductListWindow(User loggedInUser)
         {
             InitializeComponent();
             DataContext = this;
             CurrentPage = "Products"; // Set initial page
+            _loggedInUser = loggedInUser;
+
             LoadBook();
         }
 
@@ -59,7 +69,48 @@ namespace PRN212_Assignment
 
         private void SortComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            //using (Prn212AssignmentBookShoppingContext context = new Prn212AssignmentBookShoppingContext())
+            //{
+            //    if (cmbSort.SelectedItem is ComboBoxItem selectedItem)
+            //    {
+            //        // Get the selected sort criteria
+            //        var sortCriterion = selectedItem.Content.ToString();
 
+            //        // Perform sorting based on the selected criterion
+            //        var sortedBooks = context.Books
+            //            .Select(o => new
+            //            {
+            //                BookId = o.BookId,
+            //                BookName = o.BookName,
+            //                Quantity = o.Quantity,
+            //                PriceInput=o.PriceInput,
+            //                PriceOutput=  o.PriceOutput,
+            //                AuthorName = o.Author.AuthorName ,
+            //                GenreName = o.Genre.GenreName ,
+
+            //                Image1 = o.Image1,
+                           
+
+                           
+            //            });
+
+            //        // Apply sorting based on the selected criterion
+            //        switch (sortCriterion)
+            //        {
+            //            case "Name A-Z":
+            //                sortedBooks = sortedBooks.OrderBy(o => o.BookName);
+            //                break;
+            //            case "Name Z-A":
+            //                sortedBooks = sortedBooks.OrderByDescending(o => o.BookName);
+            //                break;
+                      
+                            
+            //        }
+
+            //        // Update the DataGrid with sorted data
+            //        lvBooks.ItemsSource = sortedBooks.ToList();
+            //    }
+            //}
         }
 
 
@@ -128,5 +179,76 @@ namespace PRN212_Assignment
             addBookWindow.ShowDialog();
             LoadBook(); // Reload the book list to reflect the new book
         }
+
+        private void LogoutButton_Click(object sender, RoutedEventArgs e)
+        {
+            _loggedInUser = null;
+            var loginWindow = new Login();
+            loginWindow.Show();
+            this.Close();
+        }
+
+        private void ImportButton_Click(object sender, RoutedEventArgs e)
+        {
+            using (Prn212AssignmentBookShoppingContext context = new Prn212AssignmentBookShoppingContext())
+            {
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                openFileDialog.DefaultExt = ".json";
+                openFileDialog.Filter = "JSON Files (*.json)|*.json|All Files (*.*)|*.*";
+                if (openFileDialog.ShowDialog() == true)
+                {
+                    var jsonOptions = new JsonSerializerOptions
+                    {
+                        ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve
+                    };
+
+                    string jsonContent = File.ReadAllText(openFileDialog.FileName);
+                    List<Book> books = JsonSerializer.Deserialize<List<Book>>(jsonContent, jsonOptions);
+
+                    // Đảm bảo dữ liệu liên kết đến Author và Genre được khôi phục đúng cách
+                    foreach (var book in books)
+                    {
+                        book.Author = context.Authors.FirstOrDefault(a => a.AuthorId == book.AuthorId);
+                        book.Genre = context.Genres.FirstOrDefault(g => g.GenreId == book.GenreId);
+                    }
+
+                    lvBooks.ItemsSource = books;
+                    MessageBox.Show("Import thành công");
+                }
+            }
+        }
+
+
+
+        private void ExportButton_Click(object sender, RoutedEventArgs e)
+        {
+            using (Prn212AssignmentBookShoppingContext context = new Prn212AssignmentBookShoppingContext())
+            {
+                // Lấy danh sách sách từ cơ sở dữ liệu
+                List<Book> bookList = context.Books.Include(b => b.Author).Include(b => b.Genre).ToList();
+
+                // Mở hộp thoại lưu file
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.DefaultExt = ".json";
+                saveFileDialog.Filter = "JSON Files (*.json)|*.json|All Files (*.*)|*.*";
+                if (saveFileDialog.ShowDialog() == true)
+                {
+                    var jsonOptions = new JsonSerializerOptions
+                    {
+                        WriteIndented = true,
+                        ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve
+                    };
+
+                    // Chuyển đổi danh sách sách thành JSON
+                    string jsonContent = JsonSerializer.Serialize(bookList, jsonOptions);
+
+                    // Ghi JSON vào file
+                    File.WriteAllText(saveFileDialog.FileName, jsonContent);
+                    MessageBox.Show("Export thành công");
+                }
+            }
+        }
+
+
     }
 }

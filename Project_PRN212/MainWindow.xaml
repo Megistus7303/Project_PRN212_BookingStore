@@ -16,7 +16,7 @@
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
             <TextBlock Text="Admin Dashboard" VerticalAlignment="Center" Foreground="White" FontSize="20" Margin="10" />
-            <Button Content="Logout" Name="LogoutButton" VerticalAlignment="Center" Margin="498,0,10,0" Padding="5" Background="#E74C3C" Foreground="White"/>
+            <Button Content="Logout" Name="LogoutButton" VerticalAlignment="Center" Margin="498,0,10,0" Padding="5" Background="#E74C3C" Foreground="White" Click="LogoutButton_Click"/>
         </Grid>
         <!-- Main Content -->
         <Grid Name="MainContentGrid" Margin="10">

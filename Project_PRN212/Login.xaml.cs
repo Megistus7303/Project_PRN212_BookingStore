@@ -54,7 +54,7 @@ namespace PRN212_Assignment
             switch (user.UserRole)
             {
                 case "Admin":
-                    MainWindow mainWindow = new MainWindow(); 
+                    MainWindow mainWindow = new MainWindow(user); 
                     mainWindow.Show(); 
                     break;
                 case "Customer":

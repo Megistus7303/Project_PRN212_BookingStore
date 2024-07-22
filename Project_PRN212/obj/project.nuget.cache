@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "apW8TBuCgRMaSvk7hoztmdsE9x8VP9qxmG0wONtqMzgj4oYzYCSYzz4hE1AjDitahsWd+zOnhE/6FqrwiweLPA==",
+  "dgSpecHash": "VXFRscpywxE=",
   "success": true,
-  "projectFilePath": "D:\\FPT\\K5\\PRN212\\Ass\\Project_PRN212\\Project_PRN212.csproj",
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\PRN212_Project\\Project_PRN212_BookingStore\\Project_PRN212\\Project_PRN212.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
