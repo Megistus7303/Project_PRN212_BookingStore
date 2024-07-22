@@ -15,7 +15,7 @@
             <Button x:Name="btnHomePage" Content="Home Page" Width="112" Height="30" Click="btnHomePage_Click"/>
             <Button x:Name="btnCart" Content="Cart" Margin="12" Width="100" Height="30"/>
             <Button x:Name="btnUserProfile" Margin="12" Width="100" Height="30" Click="btnUserProfile_Click"/>
-            <Button x:Name="btnLogout"  Content="Log Out" Margin="12" Width="100" Height="30"/>
+            <Button x:Name="btnLogout"  Content="Log Out" Margin="12" Width="100" Height="30" Click="btnLogout_Click"/>
         </WrapPanel>
         <ListView x:Name="lvCartList" Margin="0,117,160,242">
             <ListView.View>

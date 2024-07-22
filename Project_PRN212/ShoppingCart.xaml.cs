@@ -193,6 +193,15 @@ namespace PRN212_Assignment
         {
             userProfile userProfile = new userProfile(userFound);
 
+            userProfile.Show();
+            this.Close();
+        }
+
+        private void btnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
         }
     }
 }
