@@ -5,7 +5,7 @@
         Title="Users List" Height="450" Width="800">
     <DockPanel>
         <!-- Sidebar -->
-        <local:Sidebar CurrentPage="Users" DockPanel.Dock="Left" Width="200"/>
+        <!-- <local:Sidebar CurrentPage="Users" DockPanel.Dock="Left" Width="200"/> -->
         <!-- Main Content -->
         <Grid DockPanel.Dock="Top" Background="#34495E" Height="50">
             <Grid.ColumnDefinitions>

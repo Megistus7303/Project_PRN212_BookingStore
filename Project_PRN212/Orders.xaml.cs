@@ -11,11 +11,11 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using Project_PRN212.Models;
+using PRN212_Assignment.Models;
 using Microsoft.Win32;
 using System.IO;
 
-namespace Project_PRN212
+namespace PRN212_Assignment
 {
 
     public partial class Orders : Window

@@ -1,4 +1,4 @@
-﻿<Window x:Class="Project_PRN212.Orders"
+﻿<Window x:Class="PRN212_Assignment.Orders"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:WPF_demo"

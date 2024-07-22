@@ -1,7 +1,7 @@
-﻿using Project_PRN212.Models;
+﻿using PRN212_Assignment.Models;
 using System.Windows;
 
-namespace Project_PRN212
+namespace PRN212_Assignment
 {
     public partial class Login : Window
     {
@@ -54,10 +54,8 @@ namespace Project_PRN212
             switch (user.UserRole)
             {
                 case "Admin":
-                    // Enter same the customerProfile
                     break;
                 case "Customer":
-                    // Có gì Bình sửa giúp tôi là nó direct sang trang homepage nhá
                     userProfile customerProfile = new userProfile(user);
                     customerProfile.Show();
                     break;
