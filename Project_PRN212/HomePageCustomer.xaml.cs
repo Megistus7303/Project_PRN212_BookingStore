@@ -1,4 +1,6 @@
-﻿using PRN212_Assignment.Models;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using PRN212_Assignment.Models;
+using PRN212_Assignment;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +14,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using User = PRN212_Assignment.Models.User;
 namespace PRN212_Assignment
 {
     /// <summary>
@@ -47,7 +49,7 @@ namespace PRN212_Assignment
             String a = lvBookList.SelectedItem.ToString();
             String[] bookFound = a.Split(new char[] { '[', '=', ',' });
 
-            BookDetail bookDetail = new BookDetail(bookFound[3].Trim());
+            BookDetailCustomer bookDetail = new BookDetailCustomer(bookFound[3].Trim(), userFound);
             this.Close();
             bookDetail.Show();
         }
@@ -62,8 +64,16 @@ namespace PRN212_Assignment
         private void btnUserProfile_Click(object sender, RoutedEventArgs e)
         {
             userProfile userProfile = new userProfile(userFound);
-            this.Close();
             userProfile.Show();
+            this.Close();
+
+        }
+
+        private void btnLogOut_Click(object sender, RoutedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
         }
     }
 }

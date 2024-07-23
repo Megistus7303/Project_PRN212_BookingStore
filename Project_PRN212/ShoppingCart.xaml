@@ -12,10 +12,10 @@
         <Run Text="Shopping" FontWeight="Bold" Foreground="Red"/>
         </TextBlock>
         <WrapPanel Orientation="Horizontal" Margin="0,12,0,422" HorizontalAlignment="Right" Width="534">
-            <Button x:Name="btnHomePage" Content="Home Page" Margin="12" Width="100" Height="30" Click="btnHomePage_Click"/>
+            <Button x:Name="btnHomePage" Content="Home Page" Width="112" Height="30" Click="btnHomePage_Click"/>
             <Button x:Name="btnCart" Content="Cart" Margin="12" Width="100" Height="30"/>
-            <Button x:Name="btnLogIn"  Content="Login" Margin="12" Width="100" Height="30"/>
-            <Button x:Name="btnSignUp"  Content="Sign Up" Margin="12" Width="100" Height="30"/>
+            <Button x:Name="btnUserProfile" Margin="12" Width="100" Height="30" Click="btnUserProfile_Click"/>
+            <Button x:Name="btnLogout"  Content="Log Out" Margin="12" Width="100" Height="30" Click="btnLogout_Click"/>
         </WrapPanel>
         <ListView x:Name="lvCartList" Margin="0,117,160,242">
             <ListView.View>
@@ -42,7 +42,7 @@
         </ListView>
         <StackPanel Margin="474,297,104,154">
             <Label Name="lblTotalPrice"  Content="Total: " FontWeight="Bold"></Label>
-        <Button Name="btnCheckOut" Content="Check Out" Height="28" Width="115" Click="btnCheckOut_Click" ></Button>
+            <Button Name="btnCheckOut" Content="Check Out" Height="28" Width="115" Click="btnCheckOut_Click" ></Button>
         </StackPanel>
     </Grid>
 </Window>

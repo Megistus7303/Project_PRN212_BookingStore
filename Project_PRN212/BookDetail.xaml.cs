@@ -54,20 +54,25 @@ namespace PRN212_Assignment
         private void btnAddtoCart_Click(object sender, RoutedEventArgs e)
         {
 
-            int QuantityBuy = int.Parse(txtQuantity.Text);
-            String quantityString = lblNumber.Content.ToString().Substring(8).Trim();
-            int Quantity = int.Parse(quantityString);
-            if (QuantityBuy <= 0 || QuantityBuy > Quantity)
-            {
-                MessageBox.Show("You input wrong number");
-            }
-            else
-            {
-                ShoppingCart shoppingCart = new ShoppingCart(bookIDAdd, "USER001", QuantityBuy);
-                this.Close();
-                shoppingCart.Show();
+            //int QuantityBuy = int.Parse(txtQuantity.Text);
+            //String quantityString = lblNumber.Content.ToString().Substring(8).Trim();
+            //int Quantity = int.Parse(quantityString);
+            //if (QuantityBuy <= 0 || QuantityBuy > Quantity)
+            //{
+            //    MessageBox.Show("You input wrong number");
+            //}
+            //else
+            //{
+            //    ShoppingCart shoppingCart = new ShoppingCart(bookIDAdd, "USER001", QuantityBuy);
+            //    this.Close();
+            //    shoppingCart.Show();
 
-            }
+            //}
+            MessageBox.Show("You need to login first");
+            Login login = new Login();
+            login.Show();
+            this.Close();
+
         }
 
         private void btnHomePage_Click(object sender, RoutedEventArgs e)
@@ -79,9 +84,12 @@ namespace PRN212_Assignment
 
         private void btnCart_Click(object sender, RoutedEventArgs e)
         {
-            ShoppingCart cart = new ShoppingCart("USER001");
+            //ShoppingCart cart = new ShoppingCart("USER001");
+            //this.Close();
+            //cart.Show();
+            Login login = new Login();
+            login.Show();
             this.Close();
-            cart.Show();
         }
         private String generateNextCommentID()
         {
@@ -99,45 +107,54 @@ namespace PRN212_Assignment
         }
         private void btnSend_Click(object sender, RoutedEventArgs e)
         {
-            String Comment = tbxComment.Text;
-            Comment CommentAdd = new Comment
-            {
-                CommentId = generateNextCommentID(),
-                BookId = bookIDAdd,
-                UserId = "USER001",
-                Comment1 = Comment,
-            };
-            using (Prn212AssignmentBookShoppingContext context = new Prn212AssignmentBookShoppingContext())
-            {
-                context.Comments.Add(CommentAdd);
-                context.SaveChanges();
-                LoadDetailBooks(bookIDAdd);
+            //String Comment = tbxComment.Text;
+            //Comment CommentAdd = new Comment
+            //{
+            //    CommentId = generateNextCommentID(),
+            //    BookId = bookIDAdd,
+            //    UserId = "USER001",
+            //    Comment1 = Comment,
+            //};
+            //using (Prn212AssignmentBookShoppingContext context = new Prn212AssignmentBookShoppingContext())
+            //{
+            //    context.Comments.Add(CommentAdd);
+            //    context.SaveChanges();
+            //    LoadDetailBooks(bookIDAdd);
 
-            }
+            //}
+            MessageBox.Show("You need to login first");
         }
 
         private void btnRemove_Click(object sender, RoutedEventArgs e)
         {
-            Button button = sender as Button;
-            if (button != null)
-            {
-                // Get the DataContext of the button, which is the CartItem
-                String CommentID = button.DataContext.ToString();
-                using (Prn212AssignmentBookShoppingContext context = new Prn212AssignmentBookShoppingContext())
-                {
-                    Comment commentFound = context.Comments.FirstOrDefault(e => e.CommentId == CommentID);
-                    if (commentFound != null && commentFound.UserId.Equals("USER001"))
-                    {
-                        context.Comments.Remove(commentFound);
-                        context.SaveChanges();
-                        LoadDetailBooks(bookIDAdd);
-                    }
-                    else
-                    {
-                        MessageBox.Show("You can't remove this comment");
-                    }
-                }
-            }
+            //Button button = sender as Button;
+            //if (button != null)
+            //{
+            //    // Get the DataContext of the button, which is the CartItem
+            //    String CommentID = button.DataContext.ToString();
+            //    using (Prn212AssignmentBookShoppingContext context = new Prn212AssignmentBookShoppingContext())
+            //    {
+            //        Comment commentFound = context.Comments.FirstOrDefault(e => e.CommentId == CommentID);
+            //        if (commentFound != null && commentFound.UserId.Equals("USER001"))
+            //        {
+            //            context.Comments.Remove(commentFound);
+            //            context.SaveChanges();
+            //            LoadDetailBooks(bookIDAdd);
+            //        }
+            //        else
+            //        {
+            //            MessageBox.Show("You can't remove this comment");
+            //        }
+            //    }
+            //}
+            MessageBox.Show("You need to login first");
+        }
+
+        private void btnBuyNow_Click(object sender, RoutedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
         }
     }
 }

@@ -28,16 +28,16 @@
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
-                    <GridViewColumn Header="Book Name" Width="200" DisplayMemberBinding="{Binding BookName}" />
-                    <GridViewColumn Header="Author Name " Width="100" DisplayMemberBinding="{Binding AuthorName}"  />
-                    <GridViewColumn Header="Genre" Width="100" DisplayMemberBinding="{Binding GenreName}"/>
-                    <GridViewColumn Header="Number" Width="100" DisplayMemberBinding="{Binding Quantity}"/>
-                    <GridViewColumn Header="Price" Width="100" DisplayMemberBinding="{Binding Price}"/>
+                    <GridViewColumn Header="Book Name" Width="Auto" DisplayMemberBinding="{Binding BookName}" />
+                    <GridViewColumn Header="Author Name " Width="Auto" DisplayMemberBinding="{Binding AuthorName}"  />
+                    <GridViewColumn Header="Genre" Width="Auto" DisplayMemberBinding="{Binding GenreName}"/>
+                    <GridViewColumn Header="Number" Width="Auto" DisplayMemberBinding="{Binding Quantity}"/>
+                    <GridViewColumn Header="Price" Width="Auto" DisplayMemberBinding="{Binding Price}"/>
                 </GridView>
             </ListView.View>
         </ListView>
         <WrapPanel Margin="10,71,566,405">
-            <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Height="33" Width="128"/>
+            <TextBox x:Name="txtSearch" HorizontalAlignment="Center" Height="33" Width="128"/>
             <Button x:Name="btnSearch"  Content="Search" Width="82" Click="btnSearch_Click"/>
         </WrapPanel>
 

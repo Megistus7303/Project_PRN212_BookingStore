@@ -1,5 +1,4 @@
 ﻿using Azure;
-using Microsoft.VisualBasic.ApplicationServices;
 using Microsoft.VisualBasic.Logging;
 using PRN212_Assignment.Models;
 using System;
@@ -29,14 +28,21 @@ namespace PRN212_Assignment
     public partial class ShoppingCart : Window
     {
         String userIDfound;
+        private User userFound;
         public ShoppingCart()
         {
             InitializeComponent();
+                
         }
         public ShoppingCart(String UserID)
         {
             userIDfound = UserID;
             InitializeComponent();
+            using (Prn212AssignmentBookShoppingContext context = new Prn212AssignmentBookShoppingContext())
+            {
+                userFound = context.Users.FirstOrDefault(e => e.UserId == UserID);
+            }
+            btnUserProfile.Content = "Hello," + userFound.Username;
             LoadedCart(UserID);
         }
         public ShoppingCart(String BookID, String UserID, int Quantity)
@@ -181,6 +187,21 @@ namespace PRN212_Assignment
             //pay.Show();
             MessageBox.Show("You order successfully");
             LoadedCart(userIDfound);
+        }
+
+        private void btnUserProfile_Click(object sender, RoutedEventArgs e)
+        {
+            userProfile userProfile = new userProfile(userFound);
+
+            userProfile.Show();
+            this.Close();
+        }
+
+        private void btnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
         }
     }
 }
