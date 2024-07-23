@@ -20,10 +20,17 @@
         </Grid>
         <!-- Main Content -->
         <Grid Name="MainContentGrid" Margin="10">
+            
             <StackPanel Name="HomeContent">
                 <TextBlock Text="Welcome to the Admin Dashboard" FontSize="16" Margin="10" />
+                <StackPanel>
+                    <Button Content="Export Data" Click="ExportButton_Click" Width="100px" HorizontalAlignment="Right" Margin="10,0,0,0"/>
+
+                </StackPanel>
                 <Grid Margin="10">
+                    
                     <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
@@ -39,8 +46,10 @@
                     <TextBlock Name="TotalOrdersText" FontSize="14" Margin="10" Grid.Row="1" Grid.Column="1"/>
                     <TextBlock Text="Total Products:" FontSize="14" Margin="10" Grid.Row="2" Grid.Column="0"/>
                     <TextBlock Name="TotalProductsText" FontSize="14" Margin="10" Grid.Row="2" Grid.Column="1"/>
-                    <TextBlock Text="Total Revenue:" FontSize="14" Margin="10" Grid.Row="3" Grid.Column="0"/>
-                    <TextBlock Name="TotalRevenueText" FontSize="14" Margin="10" Grid.Row="3" Grid.Column="1"/>
+                    <TextBlock Text="Total Comment:" FontSize="14" Margin="10" Grid.Row="3" Grid.Column="0"/>
+                    <TextBlock Name="TotalCommentText" FontSize="14" Margin="10" Grid.Row="3" Grid.Column="1"/>
+                    <TextBlock Text="Total Revenue:" FontSize="14" Margin="10" Grid.Row="4" Grid.Column="0"/>
+                    <TextBlock Name="TotalRevenueText" FontSize="14" Margin="10" Grid.Row="4" Grid.Column="1"/>
                 </Grid>
             </StackPanel>
         </Grid>
