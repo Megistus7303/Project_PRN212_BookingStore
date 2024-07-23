@@ -58,5 +58,12 @@ namespace PRN212_Assignment
             this.Close();
             cart.Show();
         }
+
+        private void btnUserProfile_Click(object sender, RoutedEventArgs e)
+        {
+            userProfile userProfile = new userProfile(userFound);
+            this.Close();
+            userProfile.Show();
+        }
     }
 }

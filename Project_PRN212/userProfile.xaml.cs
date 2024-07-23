@@ -86,8 +86,8 @@ namespace PRN212_Assignment
 
         private void BackToHomepage_Click(object sender, RoutedEventArgs e)
         {
-            // HomePage homePageWindow = new HomePage();
-            // homePageWindow.Show();
+            HomePageCustomer homePageWindow = new HomePageCustomer(_loggedInUser);
+            homePageWindow.Show();
             this.Close();
         }
 
