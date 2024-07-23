@@ -51,6 +51,11 @@ namespace PRN212_Assignment
             userIDfound = UserID;
             using (Prn212AssignmentBookShoppingContext context = new Prn212AssignmentBookShoppingContext())
             {
+                userFound = context.Users.FirstOrDefault(e => e.UserId == UserID);
+            }
+            btnUserProfile.Content = "Hello," + userFound.Username;
+            using (Prn212AssignmentBookShoppingContext context = new Prn212AssignmentBookShoppingContext())
+            {
                 Book book = context.Carts.Where(e => e.UserId == UserID && e.BookId == BookID).Select(e => e.Book).FirstOrDefault();
                 if (book == null)
                 {

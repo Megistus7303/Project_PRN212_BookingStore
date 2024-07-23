@@ -35,5 +35,9 @@
                 </GridView>
             </ListView.View>
         </ListView>
+        <WrapPanel Margin="10,71,566,405">
+            <TextBox x:Name="txtSearch" HorizontalAlignment="Center" Height="33" Width="128"/>
+            <Button x:Name="btnSearch"  Content="Search" Width="82" Click="btnSearch_Click"/>
+        </WrapPanel>
     </Grid>
 </Window>
