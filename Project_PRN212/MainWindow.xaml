@@ -24,7 +24,7 @@
             <StackPanel Name="HomeContent">
                 <TextBlock Text="Welcome to the Admin Dashboard" FontSize="16" Margin="10" />
                 <StackPanel>
-                    <Button Content="Export Data" Click="ExportButton_Click" Width="100px" HorizontalAlignment="Right" Margin="10,0,0,0"/>
+                    <Button Content="Export Data" Click="ExportButton_Click" Width="122" HorizontalAlignment="Right" Margin="10,0,0,0"/>
 
                 </StackPanel>
                 <Grid Margin="10">

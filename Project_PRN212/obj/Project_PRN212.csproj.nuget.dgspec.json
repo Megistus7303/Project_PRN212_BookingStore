@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FPT\\K5\\PRN212\\Ass\\Project_PRN212\\Project_PRN212.csproj": {}
+    "D:\\Downloads\\PRN212_SE1815_Team1 (1)\\Ass\\Project_PRN212\\Project_PRN212.csproj": {}
   },
   "projects": {
-    "D:\\FPT\\K5\\PRN212\\Ass\\Project_PRN212\\Project_PRN212.csproj": {
+    "D:\\Downloads\\PRN212_SE1815_Team1 (1)\\Ass\\Project_PRN212\\Project_PRN212.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPT\\K5\\PRN212\\Ass\\Project_PRN212\\Project_PRN212.csproj",
+        "projectUniqueName": "D:\\Downloads\\PRN212_SE1815_Team1 (1)\\Ass\\Project_PRN212\\Project_PRN212.csproj",
         "projectName": "Project_PRN212",
-        "projectPath": "D:\\FPT\\K5\\PRN212\\Ass\\Project_PRN212\\Project_PRN212.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\FPT\\K5\\PRN212\\Ass\\Project_PRN212\\obj\\",
+        "projectPath": "D:\\Downloads\\PRN212_SE1815_Team1 (1)\\Ass\\Project_PRN212\\Project_PRN212.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\Downloads\\PRN212_SE1815_Team1 (1)\\Ass\\Project_PRN212\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\visualstudio\\SDKs\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,6 +50,10 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "MaterialDesignColors": {
               "target": "Package",
               "version": "[3.1.0, )"
@@ -93,7 +102,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

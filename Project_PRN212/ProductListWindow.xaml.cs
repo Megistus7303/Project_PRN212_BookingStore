@@ -40,6 +40,7 @@ namespace PRN212_Assignment
                     e.BookId,
                     e.BookName,
                     e.Quantity,
+                    e.Image1,
                     e.PriceInput,
                     e.PriceOutput,
                     AuthorName = context.Authors.FirstOrDefault(a => a.AuthorId == e.AuthorId)?.AuthorName,

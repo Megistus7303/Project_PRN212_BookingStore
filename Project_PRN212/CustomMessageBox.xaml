@@ -5,8 +5,8 @@
         ResizeMode="NoResize">
     <Grid>
         <Border Background="{DynamicResource CustomBackgroundBrush}" CornerRadius="10" Padding="10" Effect="{StaticResource ShadowEffect}">
-            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                <TextBlock x:Name="MessageText" FontSize="16" TextWrapping="Wrap" Margin="10" TextAlignment="Center" Width="348" Height="35"/>
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Height="105">
+                <TextBlock x:Name="MessageText" FontSize="13" TextWrapping="Wrap" Margin="10" TextAlignment="Center" Width="348" Height="35"/>
                 <Button Content="OK" Width="100" Margin="10" Click="OkButton_Click" HorizontalAlignment="Center"/>
             </StackPanel>
         </Border>

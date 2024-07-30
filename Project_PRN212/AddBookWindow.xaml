@@ -37,7 +37,7 @@
             <TextBlock Text="Detail Book" />
             <TextBox Name="txtDetailbook" />
 
-            <Button Content="Add New Book" Click="AddNewBookButton_Click" Margin="10" Width="120" Height="30" HorizontalAlignment="Right" />
+            <Button Content="Add New Book" Click="AddNewBookButton_Click" Margin="10" Width="145" Height="30" HorizontalAlignment="Right" />
         </StackPanel>
     </Grid>
 </Window>

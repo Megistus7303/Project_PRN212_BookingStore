@@ -1,9 +1,9 @@
-D:\FPT\K5\PRN212\Ass\Project_PRN212\bin\Debug\net8.0-windows\Project_PRN212.dll
 D:\FPT\K5\PRN212\Ass\Project_PRN212\bin\Debug\net8.0-windows\Images\user_icon.png
 D:\FPT\K5\PRN212\Ass\Project_PRN212\bin\Debug\net8.0-windows\Project_PRN212.exe
 D:\FPT\K5\PRN212\Ass\Project_PRN212\bin\Debug\net8.0-windows\appsettings.json
 D:\FPT\K5\PRN212\Ass\Project_PRN212\bin\Debug\net8.0-windows\Project_PRN212.deps.json
 D:\FPT\K5\PRN212\Ass\Project_PRN212\bin\Debug\net8.0-windows\Project_PRN212.runtimeconfig.json
+D:\FPT\K5\PRN212\Ass\Project_PRN212\bin\Debug\net8.0-windows\Project_PRN212.dll
 D:\FPT\K5\PRN212\Ass\Project_PRN212\bin\Debug\net8.0-windows\Project_PRN212.pdb
 D:\FPT\K5\PRN212\Ass\Project_PRN212\bin\Debug\net8.0-windows\Azure.Core.dll
 D:\FPT\K5\PRN212\Ass\Project_PRN212\bin\Debug\net8.0-windows\Azure.Identity.dll
@@ -145,6 +145,7 @@ D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\userProfile.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\AddBookWindow.g.cs
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\AuthorListWindow.g.cs
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\BookDetail.g.cs
+D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\BookDetailCustomer.g.cs
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\BookList.g.cs
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\changePassword.g.cs
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\CustomMessageBox.g.cs
@@ -176,6 +177,7 @@ D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\Project_PRN212_Mark
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\App.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\AuthorListWindow.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\BookDetail.baml
+D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\BookDetailCustomer.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\DashboardManage.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\GenreListWindow.baml
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\HomePage.baml
@@ -198,3 +200,4 @@ D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\refint\Project_PRN2
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\Project_PRN212.pdb
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\Project_PRN212.genruntimeconfig.cache
 D:\FPT\K5\PRN212\Ass\Project_PRN212\obj\Debug\net8.0-windows\ref\Project_PRN212.dll
+D:\FPT\K5\PRN212\Ass\Project_PRN212\bin\Debug\net8.0-windows\BCrypt.Net-Next.dll

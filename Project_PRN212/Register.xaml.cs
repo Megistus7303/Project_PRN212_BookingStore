@@ -93,14 +93,14 @@ namespace PRN212_Assignment
             using (var context = new Prn212AssignmentBookShoppingContext())
             {
                 string newUserId = GenerateNewUserId(context);
-
+                string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
                 var user = new User
                 {
                     UserId = newUserId,
                     FirstName = firstName,
                     LastName = lastName,
                     Username = username,
-                    Userpassword = password,
+                    Userpassword = hashedPassword,
                     UserEmail = email,
                     UserRole = "Customer",
                     UserAddress = address

@@ -50,6 +50,14 @@ namespace PRN212_Assignment
             string searchText = SearchTextBox.Text.ToLower();
             var filteredBooks = _context.Books
                 .Where(b => b.BookName.ToLower().Contains(searchText))
+                .Select(b => new
+                {
+                    BookID = b.BookId,
+                    BookName = b.BookName,
+                    Quantity = b.Quantity,
+                    PriceInput = b.PriceInput,
+                    PriceOutput = b.PriceOutput
+                })
                 .ToList();
             BooksListView.ItemsSource = filteredBooks;
         }

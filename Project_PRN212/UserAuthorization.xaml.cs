@@ -49,6 +49,7 @@ namespace PRN212_Assignment
 
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
+            var roles = new List<string> { "Admin", "Customer" };
             string searchTerm = SearchUserTextBox.Text.Trim();
 
             var filteredUsers = context.Users
@@ -58,7 +59,8 @@ namespace PRN212_Assignment
                     UserId = user.UserId,
                     Username = user.Username,
                     Role = user.UserRole,
-                    Email = user.UserEmail
+                    Email = user.UserEmail,
+                    AvailableRoles = roles
                 })
                 .ToList();
 

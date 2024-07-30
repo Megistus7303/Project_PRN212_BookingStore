@@ -66,7 +66,7 @@ namespace PRN212_Assignment
             using (var context = new Prn212AssignmentBookShoppingContext())
             {
                 var user = context.Users.SingleOrDefault(u => u.UserId == _loggedInUser.UserId);
-                return user != null && user.Userpassword == currentPassword;
+                return user != null && BCrypt.Net.BCrypt.Verify(currentPassword, user.Userpassword);
             }
         }
 
@@ -77,7 +77,7 @@ namespace PRN212_Assignment
                 var user = context.Users.SingleOrDefault(u => u.UserId == _loggedInUser.UserId);
                 if (user != null)
                 {
-                    user.Userpassword = newPassword; 
+                    user.Userpassword = BCrypt.Net.BCrypt.HashPassword(newPassword);
                     context.SaveChanges();
                 }
             }

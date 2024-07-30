@@ -34,9 +34,9 @@ namespace PRN212_Assignment
         {
             using (var context = new Prn212AssignmentBookShoppingContext())
             {
-                var user = context.Users.SingleOrDefault(u => u.Username == username && u.Userpassword == password);
+                var user = context.Users.SingleOrDefault(u => u.Username == username);
 
-                if (user != null)
+                if (user != null && BCrypt.Net.BCrypt.Verify(password, user.Userpassword))
                 {
                     HandleLoginSuccess(user);
                 }

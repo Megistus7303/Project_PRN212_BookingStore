@@ -10,8 +10,8 @@
         <WrapPanel Orientation="Horizontal" Margin="0,12,0,359" HorizontalAlignment="Right" Width="534">
             <Button x:Name="btnHomePage" Content="Home Page" Margin="12" Width="auto" Height="auto" Click="btnHomePage_Click"/>
             <Button x:Name="btnCart" Content="Cart" Margin="12" Width="auto" Height="auto" Click="btnCart_Click"/>
-            <Button x:Name="btnLogIn"  Content="Login" Margin="12" Width="auto" Height="auto"/>
-            <Button x:Name="btnSignUp"  Content="Sign Up" Margin="12" Width="auto" Height="auto"/>
+            <Button x:Name="btnUserProfile" Margin="12" Width="auto" Height="auto" Click="btnUserProfile_Click"/>
+            <Button x:Name="btnLogOut"  Content="LogOut" Margin="12" Width="auto" Height="auto" Click="btnLogOut_Click"/>
         </WrapPanel>
         <Image x:Name="imgImage" HorizontalAlignment="Left" Height="185" Margin="31,69,0,0" VerticalAlignment="Top" Width="274"/>
         <StackPanel Margin="378,69,61,212" Background="Azure">
@@ -23,7 +23,7 @@
             </TextBox>
             <StackPanel Orientation="Horizontal" Margin="0,0,15,0" Height="52">
                 <Button x:Name="btnAddtoCart" Margin="10" Height="auto" Width="auto" Content="Add To Cart" Click="btnAddtoCart_Click" />
-                <Button x:Name="btnBuyNow" Height="auto" Width="auto" Content="Buy Now"  Margin="10"/>
+                <Button x:Name="btnBuyNow" Height="auto" Width="auto" Content="Buy Now"  Margin="10" Click="btnBuyNow_Click"/>
             </StackPanel>
         </StackPanel>
         <Label x:Name="lblComment" Content="Comment" Margin="10,293,638,184"></Label>
